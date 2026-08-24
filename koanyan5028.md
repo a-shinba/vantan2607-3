@@ -5,7 +5,7 @@ const context :AudioContext;
 const sampleRate :number=context.sampleRate;
 
 // https://ja.wikipedia.org/wiki/ハイパスフィルタ
-function createHighPassFilter(frequency :number){
+function createHighPassFilter(frequency :number) :IIRFilterNode{
   // Sample Time
   // 双一次変換のTに対応
   let st=1/sampleRate;
@@ -22,7 +22,7 @@ function createHighPassFilter(frequency :number){
 }
 
 // https://ja.wikipedia.org/wiki/ローパスフィルタ
-function createLowPassFilter(frequency :number){
+function createLowPassFilter(frequency :number) :IIRFilterNode{
   // Sample Time
   // 双一次変換のTに対応
   let st=1/sampleRate;
