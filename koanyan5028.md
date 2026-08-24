@@ -1,4 +1,5 @@
 # WebAudioAPI上での、双一次変換を使用した一次ハイパス・ローパスフィルタの実装
+※出典: 自身のFamicomPlayerのコード
 ```js
 const context :AudioContext;
 const sampleRate :number=context.sampleRate;
